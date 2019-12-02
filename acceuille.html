@@ -1,0 +1,212 @@
+<html>
+<head>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<title>Ayoub Movie</title>
+<style>
+body {
+  background-image: url("background%20movie8.png");
+  background-color: #cccccc; background-position: center;
+              background-size: cover;
+}
+        form{position: absolute;
+             width: 60px;
+             height: 60px;
+             left: 83%;
+             top: 10%;
+             padding: 6px;
+             transform: translate(-50%,-50%);
+             border-radius: 50px;
+             border: 4px solid #fff;
+            box-sizing: border-box;
+            transition: 1.5s;}
+        input{position: absolute;
+              top: 0;
+              left: 0;
+              border: 0;
+              width: 100%;
+              height: 52px;
+              line-height: 75px;
+              outline: 0;
+              display: none;
+              font-size: 16px;
+              border-radius: 25px;
+              padding: 0 20px;
+            font-family: fantasy;}
+        i.fa{position: absolute;
+              top: 0;
+              right: 0;
+              width: 52px;
+              height: 52px; 
+              box-sizing: border-box;
+              border-radius: 50%;
+              text-align: center;
+              font-size: 30px;
+              transition: 1.5s;
+              color: tomato;
+              background: #262626;
+              padding: 8px;}
+        form:hover{width: 400px;
+                   cursor: pointer;}
+        form:hover input{display: block;}
+      
+    
+   
+          #menu, #menu ul{margin: 0;
+                          padding: 0;
+                          list-style: none;}
+          #menu{width: 1300px;
+                height: 70px;
+                margin: 30px auto;
+                background-color: #000;
+                border-radius: 20px;}
+          #menu:before,
+          #menu:after{content: '';
+                      display: table;}
+          #menu:after{clear: both;}
+          #menu li{float: left;
+                   box-shadow: 2px 0 0 #444;
+                   position: relative;}
+          #menu a{float: left;
+                  padding: 23.5px 50px;
+                  text-transform: uppercase;
+                  font-family: cursive;
+                  text-decoration: none;
+                  color: #fff;}
+          #menu li:hover> a{color: #fafafa;
+                   background: #262626;}
+          #menu ul{margin: 80px 0 0 0;
+                   opacity: 0;
+                   visibility: hidden;
+                   position: absolute;
+                   top: 71px;
+                   left: 20px;
+                   z-index: 1;
+                   background: #262626;
+                   border-radius: 3px;
+                   transition: all .3s ease-in-out;}
+          #menu li:hover> ul{opacity: 1;
+                             visibility: visible;
+                             margin: 0;}
+          #menu ul ul{top: 0;
+                      left: 150px;
+                       margin: 0 0 0 20px;}
+          #menu ul li{float: none;
+                      display: block;
+                      border: 0;
+                      box-shadow: 0 1px 0 #111, 0 2px 0 #666;}
+          #menu ul li:last-child{box-shadow: none;}
+          #menu ul a{padding: 20px;
+                     width: 130px;
+                     display: block;
+                     white-space: nowrap;
+                     float: none;
+                     text-transform: uppercase;}
+    
+    
+          .header-btn{text-decoration: none;
+                    border-radius: 20px;
+                    padding: 18px 20px;
+                    float: right;
+                    margin-top: 6px;
+                    color: #fff ;
+                    background: #107afd;
+                    font-weight: 600;
+                    margin-right: 60px;
+                    font-size: 20px;} 
+    
+    
+    .series h2{color: #fff;
+               color: rgba(255,255,255,.1);
+                           background-image: url(background8.png);
+                         background-repeat: repeat-x;
+                        -webkit-background-clip:text;
+                         animation: animate 15s linear infinite;}
+      .series img{height: 190px;
+                  width: 190px;
+                  margin-right: 10px;
+                  cursor: pointer;}
+     @keyframes animate{0%{background-position: left 0px top 10px;}40%{background-position: left 800px top 10px;}}
+     </head>
+     </style>
+    <body>
+         <div class="container header">
+        <a href="inscription.html" target="_self" class="header-btn">account</a>
+        </div>
+        
+        <form action="">
+        <input type="search" placeholder="search">
+          <i class="fa fa-search"></i>
+      </form>
+    <ul id="menu">
+        <li><a href="#">Language</a>
+        <ul>
+        <li><a href="#">Fracais</a></li>
+        <li><a href="#">Arabe</a></li>
+        <li><a href="#">Englais</a></li>
+        <li><a href="#">Espagne</a></li>
+        <li><a href="#">More</a>
+           <ul>
+        <li><a href="#">Inde</a></li>
+        <li><a href="#">Turkey</a></li>
+        <li><a href="#">Russian</a></li>
+        <li><a href="#">korean</a></li> 
+            </ul>
+            </li>
+            </ul>
+        
+        </li>
+         <li><a href="#">Year of issue</a>
+         <ul>
+        <li><a href="#">2020</a></li>
+        <li><a href="#">2019</a></li>
+        <li><a href="#">2018</a></li>
+        <li><a href="#">More</a>
+            <ul>
+             <li><a href="#">2017</a></li>    
+             <li><a href="#">2016</a></li>    
+             <li><a href="#">2015</a></li> 
+             <li><a href="#">2014</a></li>    
+             <li><a href="#">2013</a></li>    
+             </ul>
+             </li>
+             </ul>
+        </li>       
+        <li><a href="#">type</a>
+        <ul>
+        <li><a href="#">Action</a></li>
+        <li><a href="#">Horror</a></li>
+        <li><a href="#">Kids</a></li>
+        <li><a href="#">Adventure</a></li>
+        <li><a href="#">Comedy</a></li>    
+        <li><a href="#">Drama</a></li> 
+        <li><a href="#">Crime</a></li>    
+        <li><a href="#">History</a></li>    
+            </ul>
+         </li></ul>
+        
+        
+    <div class="container series">
+        <h2>Most watch</h2>
+        <div class="movie img">
+         <a href="fast%20and%20furious.html" target="_self"><img src="fast%20and%20furious.jpg" title="Fast and furious"></a>
+        <img src="AVENGERS_INFINITY_120_PAYOFF_RVB-600x817.jpg" title="AVENGERS INFINITY">
+        <img src="the%20lion%20king.jpg" title="the lion king">    
+        <img src="the%20dark%20knight.jpg" title="the dark knight">
+        <img src="spider%20man.jpg" title="spider man">   
+        </div>
+        <div class="container series">
+        <h2>New movie</h2>
+        <div class="movie img">
+         <img src="the%20silence.png" title="the silence">
+        <img src="rabid.jpg" title="Rabid">
+        <img src="the%20angry%20birds%202.jpg" title="the angry birds 2">    
+        <img src="good%20boys.jpg" title="good boys">
+        <img src="joker.jpg" title="joker">   
+        </div>
+       
+    
+    
+    
+    </body>
+    
+    </html>
